@@ -1,0 +1,46 @@
+$background-black: rgb(43, 58, 66);
+$color-white: #fff;
+
+body,
+p,
+div,
+span,
+a,
+code {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $background-black;
+    color: $color-white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+  }
+}
+h1 {
+  color: $color-white;
+}
+span,
+a {
+  color: $color-white;
+}
+
+p,
+span {
+  line-height: 40px;
+}
