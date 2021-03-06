@@ -1,3 +1,5 @@
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const {resolve} = require('./utils');
 
 module.exports = {
@@ -16,8 +18,15 @@ module.exports = {
       {
         test: /\.s?[ca]ss/,
         use: [
-          'style-loader',
-          'css-loader',
+          // 'style-loader',
+          MiniCssExtractPlugin.loader,
+          {
+            loader:'css-loader',
+            options: {
+              //开启ES Module
+              modules: true
+            }
+          },
           {
             loader: 'sass-loader',
             options: {

@@ -1,6 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const {resolve} = require('./utils');
 
@@ -11,7 +11,6 @@ module.exports = {
       title: 'YanXiaoLazy',
       template: resolve('public/index.html')
     }),
-    //开启HMP(热更新)
-    // new webpack.HotModuleReplacementPlugin()
+    new MiniCssExtractPlugin()
   ]
 }
