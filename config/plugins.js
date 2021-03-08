@@ -11,6 +11,8 @@ module.exports = {
       title: 'YanXiaoLazy',
       template: resolve('public/index.html')
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css'
+    })
   ]
 }
