@@ -13,15 +13,6 @@ $ yarn run build
 ```bash
 $ yarn run start
 ```
-### Description
-To use `windows`, please modify `package.json` 
-```json
-"script": {
-  "start": "set NODE_ENV=development && webpack ...",
-  "build": "set NODE_ENV=production && webpack ..."
-}
-```
-
 ### Contribute
 * Fork this Repo first
 * Clone your Repo
